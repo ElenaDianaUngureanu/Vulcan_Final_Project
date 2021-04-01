@@ -1,0 +1,57 @@
+.customized-section {
+    position: relative;
+    top: 25rem;
+    padding-bottom: 5rem;
+    h2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: rgb(70, 70, 70);
+        width: 15rem;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding: 2rem 0;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        width: 25rem;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .image-details {
+        display: none;
+    }
+    .picture-title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        color: rgb(117, 117, 117);
+        margin: 1rem;
+        a {
+            text-align: left;
+        }
+    }
+    a img {
+        width: 17rem;
+        margin: 1rem;
+    }
+    a p {
+        text-align: left;
+        font-size: 2rem;
+        width: 15rem;
+        margin: 2rem;
+    }
+    .products-wrapper .last {
+        border: none;
+    }
+}
+
+.screenings {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    border-bottom: 2px solid rgb(216, 216, 216);
+}

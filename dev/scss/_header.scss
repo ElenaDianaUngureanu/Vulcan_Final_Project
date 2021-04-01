@@ -1,0 +1,64 @@
+    header {
+        @include flex-layout-row;
+        color: white;
+        .logo-header {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            padding: 10px;
+        }
+        .header-section {
+            display: none;
+        }
+        @media (min-width: $breakpoint-tablet) {
+            .header-section {
+                width: 100%;
+                margin: 0;
+                display: inline-flex;
+                justify-content: space-between;
+            }
+            .logo-header {
+                display: none;
+            }
+            .logo-header-section img {
+                width: 10rem;
+            }
+            .left-header,
+            .right-header {
+                display: flex;
+                justify-content: space-evenly;
+                width: 30rem;
+                padding: 10px;
+                font-size: .7rem;
+            }
+            .left-header a {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .logo-header-section {
+                padding-top: 20px;
+                width: 20rem;
+                margin: 0 auto;
+            }
+            .right-header {
+                p {
+                    padding: 5px;
+                }
+            }
+            .right-header img {
+                width: 20px;
+            }
+            .right-header a {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+    
+    @media (min-width: $breakpoint-tablet) {
+        header {
+            display: flex;
+        }
+    }
