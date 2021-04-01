@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+// Place your Sass imports here...
+.email-signup{
+    background-color: #bedcef;
+    font-family:'Roboto', sans-serif; 
+    padding-top:0.5rem ;
+    padding-bottom: 0.5rem;
+    color: #244a64;
+    font-size: 150%;
+}
+
+#email{
+    font-family:'Roboto', sans-serif;
+    padding: 0.5rem; 
+    font-size: 70%;
+    width: 70%;
+    color: #757474;   
+}
+
+input{
+    outline: none; 
+}
+
+
+.submit-button{
+    color: white;
+    background-color:#429bd6;
+    padding: 0.5rem;
+    width: 6rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70%;
+
+}
+
+.media{
+    text-align: center;
+    background-color: #429bd6; 
+
+}   
+
+iframe{
+        border-right:5px solid #367d22 ;
+        border-left:5px solid #367d22  ;
+        box-shadow: 0 0 0 5px  #244a64; 
+
+        
+        max-width: 20rem;
+}
+
+//border-right:10px solid #367d22 ;
+       // box-shadow: 40px solid #244a64; 
+   
+
+
+
+
+
+
+
+
