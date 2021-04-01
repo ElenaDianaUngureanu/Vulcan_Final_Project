@@ -1,0 +1,60 @@
+//centering element (wrapper)
+@mixin margin-center {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+//mixin for flex layout
+//mixin for creating a flex row of evenly spaced elements
+@mixin flex-layout-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+//centering elements in a flex container
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@mixin flex-row {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+//styles for ul
+@mixin ul-base {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+//clearing margins anad padding and setting the line-height to 1
+@mixin flatten {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+//heading mixin
+@mixin section-h1 {
+    text-align: center;
+    margin: 5% 4%;
+    color: #5e5aa7;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}

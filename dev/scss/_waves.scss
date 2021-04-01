@@ -1,0 +1,47 @@
+.wave-white {
+    position: relative;
+    top: 29rem;
+    object-fit: cover;
+    img {
+        height: 8rem;
+        width: 100%;
+        display: block;
+    }
+}
+
+.wave-dark {
+    position: relative;
+    top: 25rem;
+    img {
+        height: 8rem;
+        width: 100%;
+        display: block;
+    }
+}
+
+.wave-light {
+    background-color: #154a66;
+    top: 25rem;
+    position: relative;
+    img {
+        height: 8rem;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .wave-white {
+        top: 25rem;
+    }
+    .wave-light {
+        background: transparent;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .wave-light {
+        top: 20rem;
+        background: transparent;
+    }
+}

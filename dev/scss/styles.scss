@@ -1,9 +1,19 @@
 @charset "utf-8";
-
 // Place your Sass imports here...
-
-@import "product-advisor";
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "body";
+@import "nav";
+@import "hamburger";
+@import "header";
+@import "slider";
+@import "waves";
+@import "titlepage";
+@import "about-us";
 @import "footer";
-@import "wave-blue-light";
-@import "blue-dark-wave";
 @import "email-signup";
+@import "product-advisor";
+@import "media";
+@import "customized-section";
+@import "map-contact";

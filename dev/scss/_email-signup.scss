@@ -1,61 +1,69 @@
 @charset "utf-8";
-
 // Place your Sass imports here...
-.email-signup{
+.email-signup {
+    position: relative;
+    top: 25rem;
     background-color: #bedcef;
-    font-family:'Roboto', sans-serif; 
-    padding-top:0.5rem ;
-    padding-bottom: 0.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0 0.5rem 1rem 0.5rem;
     color: #244a64;
     font-size: 150%;
+    h3 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        padding: 1rem .5rem;
+    }
 }
 
-#email{
-    font-family:'Roboto', sans-serif;
-    padding: 0.5rem; 
+#email {
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem;
     font-size: 70%;
     width: 70%;
-    color: #757474;   
+    color: #757474;
 }
 
-input{
-    outline: none; 
+input {
+    border: none;
 }
 
-
-.submit-button{
+.submit-button {
     color: white;
-    background-color:#429bd6;
+    background-color: #429bd6;
     padding: 0.5rem;
     width: 6rem;
     font-family: 'Roboto', sans-serif;
     font-size: 70%;
-
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-.media{
-    text-align: center;
-    background-color: #429bd6; 
-
-}   
-
-iframe{
-        border-right:5px solid #367d22 ;
-        border-left:5px solid #367d22  ;
-        box-shadow: 0 0 0 5px  #244a64; 
-
-        
+@media(min-width: $breakpoint-tablet) {
+    .email-signup {
+        display: flex;
+        justify-content: center;
+        padding: 0 0.5rem 1rem 0.5rem;
+        margin: 0 auto;
+        h3 {
+            color: #244A64;
+            margin-top: 1.4rem;
+            font-size: 1.1rem;
+        }
+    }
+    .submit-button {
+        padding: 0rem;
+        width: 5rem;
+        height: 2rem;
+        margin-top: 2rem;
+        font-size: 60%;
+    }
+    input {
+        margin-right: 0.5rem;
+        padding: 0rem;
         max-width: 20rem;
+        height: 2rem;
+        margin-top: 2rem;
+        font-size: 60%;
+    }
 }
-
-//border-right:10px solid #367d22 ;
-       // box-shadow: 40px solid #244a64; 
-   
-
-
-
-
-
-
-
-
