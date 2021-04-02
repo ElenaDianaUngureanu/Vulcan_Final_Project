@@ -30,9 +30,6 @@
         font-weight: bold;
         color: rgb(117, 117, 117);
         margin: 1rem;
-        a {
-            text-align: left;
-        }
     }
     a img {
         width: 17rem;
@@ -47,11 +44,71 @@
     .products-wrapper .last {
         border: none;
     }
+    @media (min-width: $breakpoint-tablet) {
+        .first h3 {
+            height: 4.2rem;
+        }
+        .products-wrapper {
+            display: flex;
+            width: 50rem;
+            margin: 3rem auto;
+            align-items: stretch;
+            height: 15rem;
+        }
+        .screenings {
+            border: none;
+            display: block;
+            margin: 0;
+            align-items: stretch;
+            text-align: center;
+            height: 15rem
+        }
+        a img {
+            margin: 0;
+            width: 10rem;
+        }
+        a p {
+            text-align: center;
+            font-size: 1rem;
+            width: 10rem;
+            margin: 0 auto;
+        }
+        .image-details {
+            display: block;
+            text-align: center;
+            font-size: 1rem;
+            color: rgb(88, 88, 88);
+            font-weight: 700;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        .picture-title h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #009DDC;
+            padding: 10px;
+        }
+    }
 }
-
 .screenings {
     display: flex;
     align-items: center;
     margin: 2rem;
     border-bottom: 2px solid rgb(216, 216, 216);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
