@@ -11,7 +11,7 @@
     color: #504f4f;
     img {
         width: 100%;
-        min-height: 35rem;
+        height: 35rem;
         object-position: center bottom;
         display: block;
         object-fit: cover;
@@ -86,31 +86,39 @@
         border: 2px solid white;
         padding: 1rem;
     }
+} 
     @media (min-width: $breakpoint-tablet) {
-        h2 {
-            width: 22rem;
-            font-size: 2rem;
-        }
-        .contact-us {
-            background-color: #009ddc;
-            border: none;
-            width: 10rem;
-            height: 3.5rem;
-            font-size: 1.3rem;
-        }
-    }
-}
+        .map-contact{
+            display: flex;
 
-@media (min-width: $breakpoint-tablet) {
-    .map-contact {
-        display: flex;
-    }
-    .map {
-        margin: 0;
-        // width: 50%;
-    }
-    .contact-section {
-        height: 20rem;
-        order: -1;
-    }
-}
+            .contact-section{
+                order: -1;
+            }
+
+            .contact-us {
+                background-color: #009ddc;
+                border: none;
+                width: 10rem;
+                height: 3.5rem;
+                font-size: 1.3rem;
+                
+            }
+        }
+     
+    
+        .map{
+            img{
+                height: 35rem ;
+            }
+        .map-text{
+    
+        .map-button {
+         background-color: #009ddc;
+         color: white;
+         border: none;
+            }
+        } 
+        }
+
+    }   
+    
