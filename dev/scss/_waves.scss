@@ -1,6 +1,6 @@
 .wave-white {
     position: relative;
-    top: 29rem;
+    top: 47rem;
     object-fit: cover;
     img {
         height: 8rem;
@@ -11,7 +11,7 @@
 
 .wave-dark {
     position: relative;
-    top: 25rem;
+    top: 40rem;
     img {
         height: 8rem;
         width: 100%;
@@ -20,8 +20,8 @@
 }
 
 .wave-light {
-    background-color: #154a66;
-    top: 25rem;
+    background-color: transparent;
+    top: 32rem;
     position: relative;
     img {
         height: 8rem;
@@ -32,10 +32,14 @@
 
 @media (min-width: $breakpoint-tablet) {
     .wave-white {
-        top: 25rem;
+        top: 23rem;
     }
     .wave-light {
         background: transparent;
+        top: 11rem;
+    }
+    .wave-dark {
+        top: 18rem;
     }
 }
 

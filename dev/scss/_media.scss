@@ -1,23 +1,24 @@
 .media {
     position: relative;
-    top: 25rem;
+    top: 40rem;
     height: 300px;
     text-align: center;
     background-color: #429BD6;
 }
 
 iframe {
-    margin-top: 3rem;
+    margin-top: 5rem;
     border-right: 12px solid #367D22;
     border-left: 12px solid #367D22;
     box-shadow: 0 0 0 20px #244A64;
-    width: 19rem;
-    height: 10rem;
+    width: 16rem;
+    height: 8rem;
 }
 
 @media(min-width: $breakpoint-tablet) {
     .media {
         height: 30rem;
+        top: 15rem;
     }
     iframe {
         margin-top: 5rem;
@@ -31,9 +32,7 @@ iframe {
     }
 }
 
-@media(min-width: $breakpoint-desktop) {
-    iframe {
-        width: 50rem;
-        height: 45rem;
-    }
-}
+// @media(min-width: $breakpoint-desktop) {
+//     iframe {
+//     }
+// }

@@ -1,64 +1,71 @@
-    header {
-        @include flex-layout-row;
-        color: white;
-        .logo-header {
-            position: absolute;
-            z-index: 10;
-            top: 0;
-            padding: 10px;
-        }
+header {
+    font-family: 'Roboto Condensed', sans-serif;
+    @include flex-layout-row;
+    color: white;
+    .logo-header {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        padding: 10px;
+    }
+    .logo-header img {
+        width: 8rem;
+    }
+    .header-section {
+        display: none;
+    }
+    @media (min-width: $breakpoint-tablet) {
         .header-section {
+            width: 100%;
+            margin: 0;
+            display: inline-flex;
+            justify-content: space-between;
+        }
+        .logo-header {
             display: none;
         }
-        @media (min-width: $breakpoint-tablet) {
-            .header-section {
-                width: 100%;
-                margin: 0;
-                display: inline-flex;
-                justify-content: space-between;
+        .logo-header-section img {
+            width: 10rem;
+        }
+        .left-header,
+        .right-header {
+            display: flex;
+            justify-content: space-evenly;
+            width: 32rem;
+            padding: 10px;
+            font-size: .9rem;
+        }
+        .left-header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 15px 5px;
+        }
+        .logo-header-section {
+            padding-top: 20px;
+            width: 20rem;
+            margin: 0 auto;
+        }
+        .right-header {
+            margin: 1rem;
+            p {
+                padding: 5px 10px;
             }
-            .logo-header {
-                display: none;
-            }
-            .logo-header-section img {
-                width: 10rem;
-            }
-            .left-header,
-            .right-header {
-                display: flex;
-                justify-content: space-evenly;
-                width: 30rem;
-                padding: 10px;
-                font-size: .7rem;
-            }
-            .left-header a {
-                color: white;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-            .logo-header-section {
-                padding-top: 20px;
-                width: 20rem;
-                margin: 0 auto;
-            }
-            .right-header {
-                p {
-                    padding: 5px;
-                }
-            }
-            .right-header img {
+            img {
                 width: 20px;
             }
-            .right-header a {
+            a {
                 color: white;
                 text-decoration: none;
                 text-transform: uppercase;
             }
         }
     }
-    
-    @media (min-width: $breakpoint-tablet) {
-        header {
-            display: flex;
-        }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    header {
+        height: 6rem;
+        display: flex;
     }
+}

@@ -1,9 +1,9 @@
 .about-us {
     position: relative;
-    top: 25rem;
+    top: 40rem;
     img {
         width: 100%;
-        min-height: 37rem;
+        height: 44rem;
         object-position: center bottom;
         display: block;
         object-fit: cover;
@@ -13,10 +13,9 @@
         position: absolute;
         width: 27rem;
         color: white;
-        // top: +20%;
         margin: 0 auto;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         h2 {
@@ -42,6 +41,21 @@
             margin: 5rem auto;
             text-transform: uppercase;
             font-weight: bold;
+        }
+    }
+}
+
+@media(min-width: $breakpoint-tablet) {
+    .about-us {
+        top: 15rem;
+        img {
+            height: 30rem;
+        }
+        .about-text {
+            width: 50rem;
+            p {
+                width: 40rem;
+            }
         }
     }
 }
