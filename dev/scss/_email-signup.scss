@@ -2,12 +2,14 @@
 // Place your Sass imports here...
 .email-signup {
     position: relative;
-    top: 25rem;
+    top: 40rem;
     background-color: #bedcef;
     font-family: 'Roboto Condensed', sans-serif;
     padding: 0 0.5rem 1rem 0.5rem;
     color: #244a64;
     font-size: 150%;
+    text-align: center;
+    margin: 0 auto;
     h3 {
         font-weight: 400;
         font-size: 1.5rem;
@@ -41,6 +43,7 @@ input {
 
 @media(min-width: $breakpoint-tablet) {
     .email-signup {
+        top: 15rem;
         display: flex;
         justify-content: center;
         padding: 0 0.5rem 1rem 0.5rem;

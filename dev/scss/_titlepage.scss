@@ -10,32 +10,45 @@
     text-transform: uppercase;
     z-index: -1;
     h1 {
-        width: 27rem;
-        font-size: 2rem;
+        width: 32rem;
+        font-size: 2.7rem;
         font-weight: bold;
+        margin: 5rem auto;
     }
     .mainButtons {
-        width: 8rem;
-        height: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+        width: 13rem;
+        height: 3rem;
         padding-top: 10px;
-        margin: 20px auto;
-        font-size: 1rem;
-        font-weight: 700;
+        margin: 2rem auto;
+        font-size: 1.3rem;
         border: 2px solid white;
     }
-    @media(min-width: $breakpoint-tablet) {
+    .title-btn {
+        margin-top: 2rem;
+    }
+}
+
+@media(min-width: $breakpoint-tablet) {
+    .page-title {
+        top: 40%;
         h1 {
-            width: 45rem;
-            margin-top: 7rem;
+            width: 35rem;
             font-size: 2.5rem;
-        }
-        .title-btn {
-            display: flex;
-            justify-content: center;
+            margin: 0 auto;
         }
         .mainButtons {
-            margin: 3rem 1rem;
+            margin-top: 2rem;
+            width: 10rem;
+            height: 3rem;
+            padding-top: 15px;
+            margin: 2rem 1rem;
+            font-size: 1rem;
         }
+    }
+    .title-btn {
+        display: flex;
+        justify-content: center;
     }
 }
 

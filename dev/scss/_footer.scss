@@ -3,22 +3,21 @@
 footer {
     background-color: #009ddc;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     padding-bottom: 3rem;
     position: relative;
-    top: 25rem;
+    top: 30rem;
     text-transform: uppercase;
     .logo {
         text-align: center;
-        padding-top: 2rem;
-        padding-bottom: 1.5rem;
+        // padding-top: 2rem;
+        // padding-bottom: 1.5rem;
         img {
             width: 30%;
         }
     }
     p {
         text-align: center;
-        font-family: 'Roboto', sans-serif;
     }
     @media(min-width: $breakpoint-tablet) {
         .final-flex {
@@ -33,7 +32,6 @@ footer {
 }
 
 .footer-contact {
-    padding: 1rem;
     display: flex;
     img {
         margin: 10px;
@@ -43,6 +41,9 @@ footer {
 }
 
 @media(min-width: $breakpoint-tablet) {
+    footer {
+        top: 11rem;
+    }
     .footer-contact {
         width: 30rem;
     }
