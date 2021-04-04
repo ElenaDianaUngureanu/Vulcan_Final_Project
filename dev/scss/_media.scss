@@ -3,14 +3,14 @@
     top: 40rem;
     height: 300px;
     text-align: center;
-    background-color: #429BD6;
+    background-color: map-get($colors, bg-light);
 }
 
 iframe {
     margin-top: 5rem;
     border-right: 12px solid #367D22;
     border-left: 12px solid #367D22;
-    box-shadow: 0 0 0 20px #244A64;
+    box-shadow: 0 0 0 20px map-get($colors, bg-dark);
     width: 16rem;
     height: 8rem;
 }
@@ -26,13 +26,14 @@ iframe {
         border-right: none;
         border-bottom: 5px solid #367D22;
         border-left: none;
-        box-shadow: 0 0 0 15px #244A64;
+        box-shadow: 0 0 0 15px map-get($colors, bg-dark);
         width: 35rem;
         height: 20rem;
     }
 }
 
-// @media(min-width: $breakpoint-desktop) {
-//     iframe {
-//     }
-// }
+@media(min-width: $breakpoint-desktop) {
+    .media {
+        top: 30rem;
+    }
+}

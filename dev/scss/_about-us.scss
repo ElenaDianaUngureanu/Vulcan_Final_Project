@@ -9,19 +9,18 @@
         object-fit: cover;
     }
     .about-text {
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-heading;
         position: absolute;
         width: 27rem;
-        color: white;
+        color: map-get($colors, body-txt-color);
         margin: 0 auto;
         position: absolute;
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         h2 {
-            text-transform: uppercase;
+            @include text-transform;
             position: relative;
-            font-weight: bold;
             font-size: 2rem;
             text-align: center;
         }
@@ -32,15 +31,17 @@
             margin: 2rem auto;
             line-height: 1.3;
         }
-        .about-button {
-            border: 2px solid white;
-            text-align: center;
-            padding-top: 15px;
-            width: 10rem;
-            height: 3rem;
-            margin: 5rem auto;
-            text-transform: uppercase;
-            font-weight: bold;
+        a {
+            @include a;
+            .about-button {
+                @include text-transform;
+                border: $border-white;
+                text-align: center;
+                padding-top: 15px;
+                width: 10rem;
+                height: 3rem;
+                margin: 5rem auto;
+            }
         }
     }
 }
@@ -56,6 +57,21 @@
             p {
                 width: 40rem;
             }
+        }
+    }
+}
+
+@media(min-width: $breakpoint-desktop) {
+    .about-us {
+        top: 30rem;
+    }
+    .about-text {
+        width: 30rem;
+        h2 {
+            font-size: 3rem;
+        }
+        p {
+            width: 40rem;
         }
     }
 }

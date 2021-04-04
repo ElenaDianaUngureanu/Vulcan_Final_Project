@@ -1,4 +1,5 @@
 .page-title {
+    @include text-transform;
     margin: 0 auto;
     position: absolute;
     top: 40%;
@@ -6,23 +7,24 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
+    font-family: $font-heading;
     z-index: -1;
     h1 {
+        @include text-transform;
         width: 32rem;
         font-size: 2.7rem;
-        font-weight: bold;
         margin: 5rem auto;
     }
     .mainButtons {
-        font-family: 'Roboto', sans-serif;
+        display: block;
+        @include a;
+        font-family: $font-body;
         width: 13rem;
         height: 3rem;
         padding-top: 10px;
         margin: 2rem auto;
         font-size: 1.3rem;
-        border: 2px solid white;
+        border: $border-white;
     }
     .title-btn {
         margin-top: 2rem;
@@ -47,9 +49,21 @@
         }
     }
     .title-btn {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
     }
 }
 
-//@media(min-width: $breakpoint-desktop)
+@media(min-width: $breakpoint-desktop) {
+    .page-title {
+        top: 38%;
+        h1 {
+            font-size: 3rem;
+            width: 40rem;
+        }
+        .mainButtons {
+            height: 2rem;
+            font-size: .8rem;
+            padding-top: 7px;
+        }
+    }
+}
