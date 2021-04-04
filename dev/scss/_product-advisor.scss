@@ -2,16 +2,15 @@
 // Place your Sass imports here...
 .product-advisor {
     text-align: center;
-    background-color: #154a66;
-    font-family: 'Roboto', sans-serif;
+    background-color: map-get($colors, bg-dark);
+    font-family: $font-body;
     padding: 1.3rem 1rem;
-    color: white;
+    color: map-get($colors, body-txt-color);
     position: relative;
     top: 40rem;
     h2 {
+        @include text-transform;
         font-size: 1.8rem;
-        font-weight: bold;
-        text-transform: uppercase;
         padding: 10px;
     }
     h3 {
@@ -40,15 +39,50 @@
         background-color: #edeeee;
     }
     .products-button {
-        background-color: #429bd6;
+        text-transform: uppercase;
+        background-color: map-get($colors, bg-light);
+        font-family: $font-body;
         margin-top: 5rem;
         width: 98%;
         height: 3rem;
         color: white;
         margin-bottom: 4rem;
-        text-transform: uppercase;
         border: none;
         font-size: 1.2rem;
+    }
+    .products-button:hover {
+        cursor: pointer;
+    }
+    // arrow style
+    #custom-select select {
+        /* Hide default arrow */
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* Style the dropdown box */
+    }
+    #custom-select {
+        position: relative;
+        width: 98%;
+        color: #696969;
+        /* optional */
+    }
+    #custom-select select,
+    #custom-select::after {
+        height: 60px;
+        font-size: 1.3rem;
+        padding-left: 10px;
+    }
+    #custom-select::after {
+        content: "\25bc";
+        /* HTML symbol */
+        /* Reposition */
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 10px;
+        line-height: 40px;
+        /* Vertical center text */
     }
 }
 
@@ -65,9 +99,11 @@
         .products-button {
             width: 98%;
             margin: 2rem auto;
-            text-transform: uppercase;
             border: none;
             font-size: 1.2rem;
+        }
+        #custom-select {
+            color: map-get($colors, bg-light);
         }
     }
     .grid-map {
@@ -87,6 +123,7 @@
         justify-content: space-evenly;
     }
     .product-advisor {
+        top: 30rem;
         select {
             width: 16rem;
         }
@@ -95,7 +132,7 @@
             padding-left: 4px;
         }
         h3 {
-            color: #429BD6;
+            color: map-get($colors, bg-light);
         }
     }
 }

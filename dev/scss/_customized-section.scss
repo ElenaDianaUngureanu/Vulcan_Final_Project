@@ -3,18 +3,17 @@
     top: 45rem;
     padding-bottom: 5rem;
     h2 {
-        font-family: 'Roboto Condensed', sans-serif;
-        color: rgb(88, 88, 88);
+        @include text-transform;
+        font-family: $font-heading;
+        color: map-get($colors, grey-text);
         width: 13rem;
         margin: 0 auto;
-        font-weight: 700;
         font-size: 2rem;
-        text-transform: uppercase;
         padding: 2rem 0;
         text-align: center;
     }
     p {
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-body;
         width: 28rem;
         margin: 0 auto;
         font-size: 1.3rem;
@@ -24,25 +23,18 @@
         display: none;
     }
     .picture-title {
+        @include text-transform;
+        font-family: $font-heading;
         width: 10rem;
         font-size: 1.7rem;
-        text-transform: uppercase;
         text-decoration: none;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 700;
-        color: rgb(88, 88, 88);
+        color: map-get($colors, grey-text);
         margin: 1rem;
     }
     a img {
         width: 17rem;
         margin: 1rem;
     }
-    // a p {
-    //     text-align: left;
-    //     font-size: 2rem;
-    //     width: 15rem;
-    //     margin: 2rem;
-    // }
     .products-wrapper .last {
         border: none;
     }
@@ -56,7 +48,7 @@
     @media (min-width: $breakpoint-tablet) {
         h2 {
             width: 30rem;
-            color: #154a66;
+            color: map-get($colors, bg-dark)
         }
         .first h3 {
             height: 3rem;
@@ -66,7 +58,7 @@
             font-size: 1rem;
         }
         .products-wrapper {
-            display: flex;
+            @include flex-center;
             width: 50rem;
             margin: 3rem auto;
             align-items: stretch;
@@ -94,7 +86,7 @@
             display: block;
             text-align: center;
             font-size: 1rem;
-            color: rgb(88, 88, 88);
+            color: map-get($colors, grey-text);
             font-weight: 700;
             padding: 10px;
             margin: 0 auto;
@@ -104,7 +96,7 @@
         .picture-title h3 {
             text-align: center;
             font-size: 1.5rem;
-            color: #009DDC;
+            color: map-get($colors, bg-light);
             padding: 0 20px;
         }
     }
@@ -117,53 +109,15 @@
     }
 }
 
-// @media (min-width: $breakpoint-desktop) {
-//     .customized-section {
-//         top: 20rem;
-//         .product-wrapper {
-//             width: 60rem;
-//             margin: 0 auto;
-//         }
-//         a img {
-//             height: auto;
-//             width: 100%;
-//         }
-//         p {
-//             text-align: center;
-//             font-size: 1.0rem;
-//             width: 55rem;
-//             margin: 20px auto;
-//         }
-//         h2 {
-//             font-family: 'Roboto Condensed', sans-serif;
-//             color: rgb(70, 70, 70);
-//             width: 35rem;
-//             margin: 0 auto;
-//             font-weight: 700;
-//             font-size: 2.0rem;
-//             text-transform: uppercase;
-//             padding: 2rem 0;
-//             text-align: center;
-//             color: #154A66;
-//         }
-//         .image-details {
-//             text-align: center;
-//             font-size: 2.0rem;
-//             color: rgb(88, 88, 88);
-//             font-weight: 700;
-//             margin: 0 auto;
-//         }
-//         .screenings {
-//             display: block;
-//             width: auto;
-//             margin: 0 0 20px;
-//             text-align: center;
-//         }
-//         .picture-title h3 {
-//             text-align: center;
-//             font-size: 1.5rem;
-//             color: #009DDC;
-//             padding: 10px;
-//         }
-//     }
-// }
+@media (min-width: $breakpoint-desktop) {
+    .customized-section {
+        height: 30rem;
+        a img {
+            width: 20rem;
+        }
+        .products-wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}

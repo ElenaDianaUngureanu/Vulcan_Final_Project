@@ -18,15 +18,16 @@
 }
 
 .dots {
+    position: relative;
+    top: -10rem;
     text-align: center;
     margin: 0;
     padding: 0;
     background: transparent;
+    z-index: 100;
 }
 
 .dot {
-    position: relative;
-    top: 47rem;
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -34,58 +35,11 @@
     background-color: #fff;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 1s ease;
-    -webkit-animation-name: colour;
-    -webkit-animation-duration: 10s;
-    animation-name: colour;
-    animation-duration: 3s;
+    z-index: 100;
 }
 
-@-webkit-keyframes colour {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes colour {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-.dot:hover {
+.dots:hover {
     background-color: #062a9e;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 10s;
-    animation-name: fade;
-    animation-duration: 10s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .7
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .7
-    }
-    to {
-        opacity: 1
-    }
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -94,10 +48,89 @@
             height: 35rem;
         }
     }
+    .dots {
+        top: -27rem;
+    }
     .dot {
-        top: 23rem;
         height: 15px;
         width: 15px;
         margin: 5px;
     }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .dot {
+        top: 25rem;
+        height: 12px;
+        width: 12px;
+    }
+}
+
+// ==============================================
+#wrap {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#photos {
+    position: relative;
+    width: 100%;
+    height: 55rem;
+    clear: both;
+    z-index: -1;
+}
+
+#photos img {
+    position: absolute;
+    z-index: -3;
+}
+
+#photos img.previous {
+    z-index: -2;
+}
+
+#photos img.current {
+    z-index: -1;
+}
+
+#switch {
+    cursor: pointer;
+}
+
+#dots {
+    padding: 0;
+    position: relative;
+    top: -10rem;
+    z-index: 100;
+}
+
+#dots li {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#dots li {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-position: 10 10;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+    z-index: 100;
+}
+
+#dots li:hover,
+#dots li.selected {
+    color: #062a9e;
 }

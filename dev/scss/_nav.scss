@@ -13,15 +13,13 @@ nav {
         display: none;
         position: relative;
         a {
-            color: white;
+            @include a;
+            @include text-transform;
             display: block;
             padding: 10px 0 5px 20px;
             font-size: 1.5rem;
-            text-decoration: none;
-            font-weight: 700;
             text-align: left;
             font-size: 1.2em;
-            text-transform: uppercase;
             line-height: 1.5;
             z-index: 10;
         }
@@ -53,7 +51,7 @@ nav {
         .menu li {
             padding: 0 5px;
             font-size: .8rem;
-            font-family: 'Roboto Condensed', sans-serif;
+            font-family: $font-heading;
         }
     }
 }
@@ -61,7 +59,6 @@ nav {
 .fa {
     background-color: black;
     padding: 20px;
-    //border-radius: $border-circle;
     color: white;
 }
 
@@ -73,10 +70,16 @@ nav {
 @media (min-width: $breakpoint-tablet) {
     .nav {
         background-color: transparent;
-        color: white;
         a {
-            color: white;
-            text-decoration: none;
+            @include a;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    nav {
+        .menu {
+            width: 40%;
         }
     }
 }

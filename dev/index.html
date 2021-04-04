@@ -12,7 +12,7 @@
     <!-- end Google Fonts -->
     <script src="https://kit.fontawesome.com/769604f610.js" crossorigin="anonymous"></script>
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-    <link rel="stylesheet" href="styles/styles.css?cb=1617413843150">
+    <link rel="stylesheet" href="styles/styles.css?cb=1617494378779">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,17 +26,17 @@
     <!-- Put your HTML code here... -->
 
     <div class="wrapper">
-        <!--------------------------------- Diana's part -------------------------------------------------->
+
         <header>
             <div class="header-section">
                 <!-- Left Side Elements -->
                 <div class="left-header">
-                    <a href="">Install Map</a>
-                    <a href="">Product Literature</a>
+                    <a href="#">Install Map</a>
+                    <a href="#">Product Literature</a>
                 </div>
                 <!-- Logo -->
                 <div class="logo-header-section">
-                    <img src="images/logo-white-vulcan.svg" alt="vulcan-logo">
+                    <a href="#"><img src="images/logo-white-vulcan.svg" alt="vulcan-logo"></a>
                 </div>
 
                 <!-- Right Side Elements -->
@@ -57,11 +57,11 @@
             </div>
             <!-- LOGO -->
             <div class="logo-header">
-                <img class="logo-image" src="images/logo-white-vulcan.svg" alt="vulcan-logo">
+                <a href="#"><img class="logo-image" src="images/logo-white-vulcan.svg" alt="vulcan-logo"></a>
             </div>
 
         </header>
-        <!------------------------------ Diana's part --------------------------------->
+
         <nav>
             <ul class="menu">
                 <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
@@ -77,8 +77,28 @@
         </nav>
 
 
-        <!--------------------------------------------- Diana's part------------------------>
-        <section class="slide-container">
+
+        <!--================================SLIDE TESTING==============================-->
+
+        <div id="wrap" class="slide-container">
+            <div id="photos" class="slide fade">
+                <img src="images/header-slider-img-01.jpg" alt="sports_image_1">
+                <img src="images/header-slider-img-02.jpg" alt="sports_image_2">
+                <img src="images/header-slider-img-03.jpg" alt="sports_image_3">
+                <!-- add more images here -->
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <!-- view scripts.js for more information -->
+        </div>
+
+        <!-- ENDIN TESTING -->
+        <!-- STARTING MY CODE -->
+        <!-- <section class="slide-container">
             <div class="slide fade">
                 <img src="images/header-slider-img-01.jpg" alt="first image">
             </div>
@@ -92,7 +112,7 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-            </div>
+            </div> -->
 
 
         </section>
@@ -100,8 +120,8 @@
         <section class="page-title">
             <h1>We Design and Fabricate Indestructible WasteWater Screens. Enough Said.</h1>
             <div class="title-btn">
-                <p class="mainButtons">View Products</p>
-                <p class="mainButtons">View Services</p>
+                <a href="#" class="mainButtons">View Products</a>
+                <a href="#" class="mainButtons">View Services</a>
             </div>
         </section>
 
@@ -109,7 +129,7 @@
             <img class="header-white-wave" src="images/wave-white.png" alt="white wave">
         </div>
 
-        <!------------------------------------- Mehran's part ------------------------------->
+
         <main>
             <section class="customized-section">
                 <div>
@@ -134,7 +154,7 @@
                                      images/machine-02-912x834.png 912w"></a>
                         <div class="screening-heading">
                             <a href="#" class="picture-title">
-                                <h3>Screenings Handling</h3>
+                                <h3>Screenings<br> Handling</h3>
                                 <p class="image-details">View Selection</p>
                             </a>
                         </div>
@@ -145,7 +165,7 @@
                                             images/machine-03-912x834.png 912w"></a>
                         <div class="screening-heading">
                             <a href="#" class="picture-title">
-                                <h3>Grit handling</h3>
+                                <h3>Grit<br> handling</h3>
                                 <p class="image-details">View Selection</p>
                             </a>
                         </div>
@@ -157,7 +177,7 @@
                                          images/machine-04-912x834.png 912w"></a>
                         <div class="screening-heading">
                             <a href="#" class="picture-title">
-                                <h3>Sludge Thickening</h3>
+                                <h3>Sludge<br>Thickening</h3>
                                 <p class="image-details">View Selection</p>
                             </a>
                         </div>
@@ -169,7 +189,7 @@
                 <img src="images/wave-blue-dark.png" alt="blue dark wave">
             </div>
 
-            <!-- -----------------Sophia's part--------------------------------- -->
+
 
             <section class="product-advisor">
                 <h2>Product Advisor</h2>
@@ -179,62 +199,74 @@
                     <div class="product-type select">
                         <p>Product Type</p>
                         <label class="product-type" for="product-type"></label>
-                        <select id="product-type">
+                        <div id="custom-select">
+                            <select id="product-type">
                                 <optgroup label="Select">
                                     <option>Select</option>
                                 </optgroup>
                             </select>
+                        </div>
                     </div>
                     <div class="screen-location  select">
                         <p>Screen Location</p>
-                        <select id="screen-location">
+                        <div id="custom-select">
+                            <select id="screen-location">
                                 <optgroup label="Select">
                                     <option>Select</option>
                                 </optgroup>
                             </select>
+                        </div>
                     </div>
                     <div class="flow-type  select">
                         <p>Flow Type</p>
-                        <select id="flow-type">
+                        <div id="custom-select">
+                            <select id="flow-type">
                                 <optgroup label="Select">
                                     <option>Select</option>
                                 </optgroup>
                             </select>
+                        </div>
                     </div>
                     <div class="channel-depth  select">
                         <p>Channel Depth</p>
-                        <select id="channel-depth">
+                        <div id="custom-select">
+                            <select id="channel-depth">
                                 <optgroup label="Select">
                                     <option>Select</option>
                                 </optgroup>
                             </select>
+                        </div>
                     </div>
                     <div class="channel-width  select">
                         <p>Channel Width</p>
-                        <select id="channel-width">
+                        <div id="custom-select">
+                            <select id="channel-width">
                                 <optgroup label="Select">
                                     <option>Select</option>
                                 </optgroup>
                             </select>
+                        </div>
                     </div>
                 </div>
                 <button class="products-button">Find My product</button>
 
             </section>
 
-            <!-- ---------------Diana's part------------------------ -->
+
 
 
             <section class="about-us">
                 <div class="about-text">
                     <h2>Delivering Clean, Safe Water Since 1975. Refreshing Indeed.</h2>
                     <p>Vulcan wastewater screening equipment has played a vital role in protecting the water supply of more than 900 cities and communities throughout the world.</p>
-                    <div class="about-button">About Us</div>
+                    <a href="#">
+                        <div class="about-button">About Us</div>
+                    </a>
                 </div>
                 <img src="images/bg-section-about-us.jpg" alt="background-image">
             </section>
 
-            <!------------------ ----------Sophia's part---------------------- -->
+
 
             <section class="media">
                 <iframe src="https://player.vimeo.com/video/183929811?title=0&byline=0&portrait=0"></iframe>
@@ -245,7 +277,7 @@
                 <input type="text" id="email" name="email" value="Enter your email">
                 <button class="submit-button">Submit</button>
             </section>
-            <!-----------------------Diana's part----------------------------- -->
+
 
             <div class="map-contact">
                 <section class="map">
@@ -261,7 +293,7 @@
                 </section>
 
                 <section class="contact-section">
-                    <h2>Ready to spec Vulcan for your project?</h2>
+                    <h2>Ready to spec <br>Vulcan <br>for your project?</h2>
                     <a href="#">
                         <p>Contact Us</p>
                     </a>
@@ -273,30 +305,32 @@
             </div>
         </main>
 
-        <!-- ---------------------------Sophia's part-------------------------------- -->
+
         <footer>
 
             <div class="final-flex">
                 <div class="logo">
-                    <img class="logo-image" src="images/logo-white-vulcan.svg" alt="vulcan-logo">
+                    <a href="#"><img class="logo-image" src="images/logo-white-vulcan.svg" alt="vulcan-logo"></a>
                 </div>
                 <div class="desktop-flex">
                     <div class="footer-contact">
                         <div class="facebook">
-                            <img src="images/icon-white-facebook.png" alt="facebook icon">
+                            <a href="#"><img src="images/icon-white-facebook.png" alt="facebook icon"></a>
                         </div>
                         <div class="linked-in">
-                            <img src="images/icon-white-linkedin.png" alt="linkedin icon">
+                            <a href="#"><img src="images/icon-white-linkedin.png" alt="linkedin icon"></a>
                         </div>
                         <div class="contact-flex">
                             <div class="phone">
                                 <img class="header-phone" src="images/phone.png" alt="phone icon">
                                 <p>+1 712-642-2755</p>
                             </div>
-                            <div class="email">
-                                <img src="images/email.png" alt="email icon">
-                                <p>Contact us</p>
-                            </div>
+                            <a href="#">
+                                <div class="email">
+                                    <img src="images/email.png" alt="email icon">
+                                    <p>Contact us</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="copyright">
@@ -311,7 +345,7 @@
     <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
     <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-    <script src="scripts/script.min.js?cb=1617413843150"></script>
+    <script src="scripts/script.min.js?cb=1617494378779"></script>
     <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->
 
 

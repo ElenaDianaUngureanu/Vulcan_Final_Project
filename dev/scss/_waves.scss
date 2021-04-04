@@ -2,10 +2,9 @@
     position: relative;
     top: 47rem;
     object-fit: cover;
+    object-position: left;
     img {
-        height: 8rem;
-        width: 100%;
-        display: block;
+        @include wave-img;
     }
 }
 
@@ -13,9 +12,7 @@
     position: relative;
     top: 40rem;
     img {
-        height: 8rem;
-        width: 100%;
-        display: block;
+        @include wave-img;
     }
 }
 
@@ -24,9 +21,7 @@
     top: 32rem;
     position: relative;
     img {
-        height: 8rem;
-        width: 100%;
-        display: block;
+        @include wave-img;
     }
 }
 
@@ -45,7 +40,10 @@
 
 @media (min-width: $breakpoint-desktop) {
     .wave-light {
-        top: 20rem;
+        top: 26rem;
         background: transparent;
+    }
+    .wave-dark {
+        top: 30rem;
     }
 }
